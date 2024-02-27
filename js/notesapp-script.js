@@ -45,3 +45,11 @@ notesContainer.addEventListener("click", function (e) {
 //     event.preventDefault();
 //   }
 // })
+
+notesContainer.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' && e.target.tagName === 'P') {
+    e.preventDefault();
+    document.execCommand('insertHTML', false, '<br>');
+    updateStorage();
+  }
+});
