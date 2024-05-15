@@ -66,3 +66,35 @@ body{
   right: 15px;
   cursor: pointer;
 }
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 768px) {
+  .container{
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .container h1{
+    justify-content: center;
+  }
+}
+
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .container h1 img {
+    width: 45px;
+  }
+  .container h1 {
+    font-size: 30px;
+  }
+  .container button {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+  .container button img {
+    width: 21px;
+  }
+}
